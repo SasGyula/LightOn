@@ -3,13 +3,13 @@ export function listaGeneral(){
     for(let i = 0; i<9; i++){
         gombok[i] = Math.floor(Math.random() * 2)
     }
-    console.log(gombok)
+    return gombok
 }
 
-export function jatekter(){
+export function jatekter(lista){
     let txt = "<div>"
     for(let i = 0; i<9; i++){
-        txt += `<div class="gombok"></div>`
+        txt += `<div class="gombok${lista[i]}"></div>`
     }
     txt += "</div>"
     return txt
