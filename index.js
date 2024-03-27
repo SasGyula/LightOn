@@ -7,6 +7,9 @@ const UJJATEK = $(".ujJatek")
 UJJATEK.on("click", function(){
     location.reload()
 })
-console.log(GOMBOK.length)
+console.log(GOMBOK)
 const PONTOK = $(".pontok")
-PONTOK.html(hanyDarab(GOMBOK))
+PONTOK.html("<p class='pontok'>" + hanyDarab(GOMBOK) + "</p>")
+for(let i = 0; i<JATEKTER.length;i++){
+    JATEKTER[i].addEventListener("click", kapcsolok)
+}

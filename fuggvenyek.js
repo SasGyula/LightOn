@@ -5,19 +5,23 @@ export function listaGeneral(n){
     }
     return gombok
 }
-
 export function jatekter(lista){
     let txt = "<div>"
     for(let i = 0; i<lista.length; i++){
-        txt += `<div class="gombok${lista[i]}"></div>`
+        txt += `<div id="${i}" class="gombok${lista[i]}"></div>`
     }
     txt += "</div>"
     return txt
 }
-export function kapcsolok(lista){
-    for (let index = 0; index < lista.length; index++) {
-        lista[index].addEventListener("click",function (event) {
-            lista.src=event.target.src;
-        });  
+export function hanyDarab(lista){
+    let db = 0;
+    for(let i = 0; i<lista.length; i++){
+        if (lista[i] > 0){
+            db += 1
+        }
     }
+    return db
+}
+export function kapcsolok(event){
+    console.log(event.target.id)
 }
