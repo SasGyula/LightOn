@@ -14,6 +14,6 @@ export function jatekter(){
     txt += "</div>"
     return txt
 }
-export function kapcsolok(event){
-
+export function kapcsolok(){
+    
 }
