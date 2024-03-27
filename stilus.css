@@ -2,6 +2,7 @@ body{
     width: 25%;
     max-width: 250px;
     margin: auto;
+    justify-content: center;
 }
 #jatekter div{
     display: grid;
