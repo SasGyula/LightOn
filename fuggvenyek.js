@@ -23,5 +23,11 @@ export function hanyDarab(lista){
     return db
 }
 export function kapcsolok(event){
-    console.log(event.target.id)
+    const id = event.target.id;
+    const clickedElement = $("#" + id); 
+
+
+    clickedElement.toggleClass("gombok0 gombok1");
+    const PONTOK = $(".pontok");
+    PONTOK.html("<p class='pontok'>" + hanyDarab(GOMBOK) + "</p>");
 }
